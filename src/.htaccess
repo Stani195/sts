@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FIKNAME) ! -d
+RewriteCond %{REQUEST_FIKNAME) ! -f
+RewriteRule ^(.+)$ index.php [QSA, L]
