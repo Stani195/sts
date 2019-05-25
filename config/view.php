@@ -27,7 +27,7 @@ $engineResolver->register('blade', function () use ($compiler){
 $container = new Container();
 $dispatcher = new Dispatcher($container);
 
-$blade = new Factory( $engineResolver, $fileViewFinder, $dispatcher );
+$blade  = new Factory( $engineResolver, $fileViewFinder, $dispatcher );
 
 function view($teamplateName, array $params = []){
     global $blade;

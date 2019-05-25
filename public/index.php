@@ -5,6 +5,7 @@ use GuzzleHttp\Psr7\ServerRequest;
 use http\Env;
 use st_php3\Action\HomeAction;
 use st_php3\Model\countrie;
+use st_php3\Model\User;
 
 require_once '../vendor/autoload.php';
 require_once '../config/dotenv.php';
@@ -30,9 +31,18 @@ if ($action = $matcher->match($serverRequest)){
 
     $action = new $action->handler;
 
+
+
     $respone = new Response();
     $respone->getBody()->write(call_user_func($action, $serverRequest));
     echo $respone->getBody();
 }
-
+// $password = '1234856' ;
+//
+//$hash = password_hash($password, PASSWORD_BCRYPT);
+//
+//if (password_needs_rehash($hash, PASSWORD_ARGON2I)){
+//   $hash = password_hash($password, PASSWORD_ARGON2I);
+//   // @todo save new hash to db
+//}
 
