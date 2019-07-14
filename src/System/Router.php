@@ -1,7 +1,7 @@
 <?php
 
 
-namespace NTSchool\System;
+namespace project\System;
 
 
 class Router

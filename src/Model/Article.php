@@ -1,18 +1,12 @@
 <?php
 
 
-namespace st_php3\Model;
+namespace project\Model;
 
 
-use Illuminate\Database\Eloquent\Model;
-
-class Article extends Model
+class Article
 {
- public function user(){
-     return $this -> belongsTo(User::class);
- }
- public function categorys()
- {
-     return $this->belongsToMany(Category::class);
- }
+public static function show(){
+echo "Vassaa";
+}
 }

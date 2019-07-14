@@ -1,17 +1,10 @@
 {
   "autoload": {
     "psr-4": {
-      "st_php3\\" : "./src"
+      "project\\": "./src"
     }
   },
   "require": {
-    "aura/router": "^3.1",
-    "illuminate/view": "^5.8",
-    "illuminate/database": "^5.8",
-    "guzzlehttp/psr7": "^1.5",
-    "illuminate/validation": "^5.8",
-     "aura/di": "^3.4",
-    "vlucas/phpdotenv": "^3.3",
-
+    "ext-pdo": "*"
   }
 }
